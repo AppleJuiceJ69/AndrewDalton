@@ -1,0 +1,127 @@
+body {
+	background-image: url(images/pexels-matej-1024684.jpg);
+	background-size: cover;
+	background-position: center;
+}
+html {
+	overflow: scroll;
+	overflow-x: hidden;
+	scrollbar-width: normal;
+	margin: 0;
+	scroll-snap-type: y mandatory;
+}
+html::-webkit-scrollbar {
+	width: 0;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+/*--------------------MIDDLE CONTAINER---------------------------------------------*/
+#container {
+	margin-top: -62.01%;
+	float: left;
+	margin-left: 45%;
+	border: 1px solid black;
+	width: 35%;
+	height: 119.95vh;
+	background: rgba(255, 255, 255, 0.9);
+}
+.volunteer {
+	color: blue;
+}
+
+#container li {
+	list-style: none;
+
+	margin-left: 5%;
+}
+
+#name {
+	font-size: 1.5em;
+}
+.con1 {
+	width: 90%;
+	border: 1px solid blue;
+	margin-left: 1.5em;
+}
+
+.hard {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+/*--------------------CONTAINER TO THE LEFT---------------------------------------------*/
+#container2 {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	margin: 10px;
+	background: linear-gradient(red, blue);
+	width: 15em;
+	padding: 5px;
+	margin-left: 19.2em;
+	border: 1px solid black;
+	height: 748px;
+}
+hr {
+	width: 13em;
+	margin: 1em;
+}
+
+.location {
+	text-align: center;
+	list-style-type: none;
+}
+
+.text {
+	text-align: center;
+	list-style-type: none;
+}
+.title {
+	margin-left: 1.4em;
+	list-style-type: none;
+	color: white;
+	font-weight: bold;
+}
+/*-------------SUMMARY PAGE-------------*/
+#summary {
+	width: 12em;
+}
+
+/*------------------NAVIGATION BAR---------------------------------------------*/
+#nav {
+	width: 100%;
+
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	background: whitesmoke;
+	border: 3px solid white;
+	justify-content: end;
+}
+
+#nav li {
+	font-size: 23px;
+	margin: 15px;
+}
+
+#nav li a {
+	color: black;
+	text-decoration: none;
+}
+
+/*--------------MY PICTURE----------------------------------------------------*/
+#picture {
+	border: 1px solid black;
+	width: 10em;
+	height: 10em;
+	margin-left: 2.5em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	background-image: url(images/20220407_192438-min.jpg);
+	background-size: cover;
+
+	background-position: center;
+}

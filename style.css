@@ -1,0 +1,380 @@
+body {
+	background: linear-gradient(red blue);
+}
+
+html {
+	scrollbar-width: normal;
+	margin: 0;
+	scroll-snap-type: y mandatory;
+	overflow: scroll;
+	overflow-x: hidden;
+}
+html::-webkit-scrollbar {
+	width: 0;
+}
+/*---------EVERYTHING--------------------*/
+* {
+	margin: 0;
+	padding: 0;
+}
+/*---------NAVIGATION BAR/HOME Section--------------------*/
+
+#welcome {
+	font-size: 50px;
+}
+#endless {
+	font-size: 20px;
+}
+
+.btn {
+	border-radius: 3px;
+	border: 2px solid white;
+	height: 25px;
+	width: 80px;
+	background: rgba(255, 255, 255, 0.1);
+}
+.btn a {
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.btn:hover {
+	animation-name: button;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+@keyframes button {
+	20% {
+		background: rgba(255, 255, 255);
+	}
+}
+#container {
+	position: fixed;
+	top: 0;
+	z-index: 90;
+	width: 100%;
+	display: unset;
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	background: whitesmoke;
+	border: 3px solid white;
+}
+
+li {
+	margin: 5px;
+	padding: 5px;
+	font-size: 20px;
+}
+li a {
+	color: black;
+	text-decoration: none;
+	font-family: "Lato", sans-serif;
+}
+li a:hover {
+	text-decoration: underline;
+	text-decoration-color: black;
+}
+
+#ad {
+	font-size: 25px;
+	border-right: 1px solid black;
+}
+#proj {
+	border-right: 1px solid black;
+}
+
+.content {
+	position: absolute;
+	width: 100%;
+	top: 40%;
+}
+
+.contents {
+	position: relative;
+	top: 50%;
+}
+
+#aj {
+	margin-right: 30%;
+}
+
+#indent {
+	margin-left: 10%;
+	color: black;
+	z-index: 100;
+	cursor: pointer;
+	display: none;
+}
+
+#indent:hover {
+	margin-left: 10%;
+	color: white;
+}
+#Container {
+	display: flex;
+	flex-direction: column;
+	margin-left: auto;
+	margin-right: auto;
+	display: none;
+	background: white;
+	width: 20%;
+}
+
+#Container li {
+	list-style-type: none;
+}
+#indent:hover {
+	color: black;
+}
+
+/*-----------SECTION PAGES positioning MOST PAGES-----------*/
+section {
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	min-width: 0%;
+	height: 100vh;
+}
+
+/*-----------Footer page-----------------*/
+/*---------FOOTER HAS OWN PAGE POSITION PAGE-----*/
+#footer {
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 91vh;
+	background-image: url(images/pexels-marcantoine-2457183.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+/*---------------Background Images--------------------------------------*/
+section#home {
+	background-image: url(images/pexels-albert-white-361104.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+section#about {
+	background-image: url(images/pexels-johannes-plenio-1103970.jpg);
+	background-size: cover;
+	background-position: center;
+}
+section#contact {
+	background: rgba(255, 255, 255, 0.8);
+}
+section#skills {
+	background-image: url(images/pexels-stephan-louis-11026293.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+section#projects {
+	background-image: url(images/pexels-pixabay-326333.jpg);
+	background-size: cover;
+	background-position: center;
+	mix-blend-mode: lighten;
+}
+
+/*-----------FOOTER-------------------------------------*/
+#box {
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.bottom {
+}
+
+p a {
+	color: white;
+}
+
+p a:hover {
+	color: black;
+	font-weight: bold;
+}
+
+#Grid {
+	display: flex;
+	grid-gap: 30px;
+}
+
+.site:hover {
+	transform: scale(1.1);
+	color: white;
+}
+
+.Title {
+	font-size: 1.5em;
+	font-weight: bold;
+	color: white;
+	margin-top: 20px;
+}
+
+.Title:hover {
+	color: black;
+	border-right: 1px solid black;
+}
+
+.title {
+	font-size: 25px;
+	font-weight: bold;
+	margin-right: 14vw;
+	color: white;
+}
+.title:hover {
+	color: black;
+	border-bottom: 3px solid lightcoral;
+}
+.Titlee {
+	font-size: 35px;
+	font-weight: bold;
+	color: white;
+	margin-top: 20px;
+}
+
+.Titlee:hover {
+	color: black;
+}
+
+#email a {
+	text-decoration: none;
+}
+#maintence {
+	color: white;
+	font-size: 20px;
+}
+/*-------------------PROJECT SECTION---------*/
+#myProject {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 30px;
+	justify-items: center;
+	mix-blend-mode: lighten;
+}
+
+#myPR {
+	font-size: 50px;
+	color: whitesmoke;
+	cursor: pointer;
+}
+
+#myPR:hover {
+	color: white;
+	transform: scale(1.1);
+}
+
+.Project {
+	border: 1px solid black;
+	width: 60%;
+	height: 30vh;
+	background: rgba(211, 211, 211, 0.1);
+}
+
+/*-----------Skills Page-------------------*/
+
+.skill {
+	list-style-type: none;
+
+	color: white;
+}
+#skillContainer {
+	font-size: 3em;
+	color: white;
+	cursor: pointer;
+}
+#skillContainer:hover {
+	transform: scale(1.1);
+}
+.skill1 {
+	color: white;
+	font-size: 25px;
+	font-weight: bold;
+	padding: 15px;
+}
+.skill1:hover {
+	transform: scale(1.1);
+	cursor: pointer;
+}
+
+#Skill2 li h1 {
+	font-size: 2em;
+}
+#Skill {
+	float: left;
+
+	border: 1px solid black;
+	width: 40%;
+	height: 99.6vh;
+	background-image: url(/images/pexels-roberto-nickson-2559941.jpg);
+	background-size: cover;
+	background-position: center;
+}
+
+#Skill2 {
+	list-style-type: none;
+	float: left;
+	width: 50%;
+	height: 50vh;
+	margin-left: 5%;
+	display: block;
+	margin-top: 10%;
+	border: 3px solid white;
+	background: rgba(0, 0, 0, 0.5);
+	text-shadow: 3px 0px 2px;
+}
+
+/*-------------------------------------About Me Section--------------------*/
+
+.aboutM {
+	list-style-type: none;
+}
+#aboutMe {
+	list-style-type: none;
+	text-transform: uppercase;
+	color: blue;
+	text-decoration: underline;
+}
+
+#aboutCon {
+	margin-top: 5%;
+	float: left;
+	margin-left: 10%;
+	border: 1px solid black;
+	width: 32%;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+	padding: 5px;
+	min-height: 70vh;
+	background: rgba(255, 255, 255, 0.2);
+}
+
+#aboutCon2 {
+	margin-top: 21%;
+	float: left;
+	margin-left: 20%;
+	border: 1px solid black;
+	width: 30%;
+	height: 40vh;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 1);
+	background: rgba(255, 255, 255, 0.2);
+}
+
+.abouty {
+	text-decoration: underline;
+	list-style-type: none;
+}
+/*--------------------------COPYRIGHTED PAGE---------------------------------------*/
+
+#copy {
+	text-align: center;
+	padding: 20px;
+	color: white;
+	font-size: 20px;
+	margin-top: 30px;
+}
